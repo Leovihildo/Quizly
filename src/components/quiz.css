@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import 'animate.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+html,body{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+}
+:root{
+    /* FONT STYLES */
+    --headingFont-size: 4rem;
+    --largeFont-size: 3.4rem;
+    --midFont-size: 2.8rem;
+    --smallFont-size: 2.3rem;
+    --tinyFont-size: 1.2rem;
+
+    /* COLOUR THEMES */
+    --mainColour: #A72703;
+    --subColour: #FCB53B;
+    --otherColour: #84994F;
+
+    /* SPACINGS */
+    --largeSpacing: 120px;
+    --midSpacing: 90px;
+    --smallSpacing: 50px;
+    --tinySpacing: 20px;
+}
+/* RE-USABLE CLASSES */
+.App{
+    margin: var(--smallSpacing) auto;
+    padding: var(--smallSpacing) var(--tinySpacing);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--subColour);
+    width: 55%;
+    height: auto;
+}
+.header-text{
+    font-size: var(--headingFont-size);
+}
+.big-text{
+    font-size: var(--midFont-size);
+}
+.smallHeading-text{
+    font-size: var(--smallFont-size);
+}
+p{
+    font-size: var(--tinyFont-size);
+}
+.btn{
+    width: 280px;
+    height: 50px;
+    font-size: var(--tinyFont-size);
+    border: 1px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #000;
+}
+.stop-btn{
+    background-color: var(--mainColour);
+    color: #fff;
+}
+.start-btn{
+    background-color: #def89d;
+    color: #000;
+}
+.disabled-btn{
+    pointer-events: none;
+}
+.next-btn{
+    background-color: var(--mainColour);
+    opacity: 0.5;
+    pointer-events: none;
+    color: #fff;
+}
+.next-btn-active{
+    background-color: var(--mainColour);
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+.quizLevel{
+    margin-top: var(--smallSpacing);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.quiz-levels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.option:hover{
+    background-color: #def89d;
+}
+.option:focus{
+    background-color: var(--otherColour);
+}
+.correct-option{
+    background-color: #05973d;
+}
+.wrong-option{
+    background-color: rgba(225, 4, 4, 0.782);
+}
+.score-board-container{
+    text-align: center;
+    margin-top: var(--tinySpacing);
+}
+.score-board{
+    display: block;
+    font-size: var(--largeFont-size);
+    margin-top: var(--tinySpacing);
+}
+/* SMALL SCREENS */
+@media screen and (width<420px) {
+    :root{
+    /* FONT STYLES */
+    --headingFont-size: 2.8rem;
+    --largeFont-size: 2.3rem;
+    --midFont-size: 2rem;
+    --smallFont-size: 1.5rem;
+    --tinyFont-size: 1rem;
+
+    /* SPACINGS */
+    --largeSpacing: 80px;
+    --midSpacing: 60px;
+    --smallSpacing: 30px;
+    --tinySpacing: 15px;
+}
+.App{
+    width: 80%;
+}
+}
