@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Quizly/static/css/main.0ccf2a09.css",
+    "main.js": "/Quizly/static/js/main.d28a0896.js",
+    "static/js/453.a295c15f.chunk.js": "/Quizly/static/js/453.a295c15f.chunk.js",
+    "index.html": "/Quizly/index.html",
+    "main.0ccf2a09.css.map": "/Quizly/static/css/main.0ccf2a09.css.map",
+    "main.d28a0896.js.map": "/Quizly/static/js/main.d28a0896.js.map",
+    "453.a295c15f.chunk.js.map": "/Quizly/static/js/453.a295c15f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ccf2a09.css",
+    "static/js/main.d28a0896.js"
+  ]
+}
